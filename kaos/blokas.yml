@@ -1,0 +1,11 @@
+name: kaos patch
+author: KaOS
+entry: kaos.pd
+image: kaos.jpeg
+description: |
+    A demo patch for the controls.
+tags:
+    - simple
+    - controls
+    - demo
+

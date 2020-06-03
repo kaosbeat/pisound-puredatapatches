@@ -1,0 +1,14 @@
+{
+    "name" : "kaos",
+    "display" : "KaOS",
+    "parameters" : [
+        ["bool","sound_on","On",1],
+        ["int","transpose","Transpose",-12,12,0],
+        ["float","volume","Volume",0,1,0.3],
+        ["bool","middle_c_btn","Middle C",0]
+    ],
+    "pages" : [
+        ["pg_main","Main",["sound_on","volume","transpose","middle_c_btn"]],
+        ["pg_main_inv","Main Inv",["middle_c_btn","transpose","volume","sound_on"]]
+    ]
+}

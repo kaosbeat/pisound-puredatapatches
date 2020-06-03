@@ -1,0 +1,162 @@
+name: monomarp 
+author: "Matthew Bielich, Patrick Pagano"
+entry: ARPodyssey.pd
+image: arp_odyssey.png
+tags:
+    - arp
+    - odyssey
+    - synth
+description: |
+    Arp Odyssey emulation patch. The CC controls are organized in 5 pages, 8 controls per page:
+
+    1. VCO Tuning, LFO & Filter control
+    1. VCO 1 & 2 FM and PWM controls
+    1. Mixer
+    1. Envelopes
+    1. Misc controls
+
+    **Program Change 0-12** messages can be used to load built-in presets.
+
+    See the GUI for more control options!
+midi_controls:
+    - control: program_change
+      value: 0
+      description: 2-Voice
+    - control: program_change
+      value: 1
+      description: Phase Synchonized Oscillator
+    - control: program_change
+      value: 2
+      description: Guitar-Leslie
+    - control: program_change
+      value: 3
+      description: Trumpet
+    - control: program_change
+      value: 4
+      description: Trumpet Chorus
+    - control: program_change
+      value: 5
+      description: String Chorus
+    - control: program_change
+      value: 6
+      description: Flute
+    - control: program_change
+      value: 7
+      description: Electric Bass
+    - control: program_change
+      value: 8
+      description: Screamo Organo
+    - control: program_change
+      value: 9
+      description: Sample & Hold Percussion
+    - control: program_change
+      value: 10
+      description: Heavy Led
+    - control: program_change
+      value: 11
+      description: Gong / Chime
+    - control: program_change
+      value: 12
+      description: Ocean Shore
+    - control: control_change
+      value: 2
+      description: VCO1 Coarse Tuning
+    - control: control_change
+      value: 3
+      description: VCO1 Fine Tuning
+    - control: control_change
+      value: 4
+      description: VCO2 Coarse Tuning
+    - control: control_change
+      value: 5
+      description: VCO2 Fine Tuning
+    - control: control_change
+      value: 6
+      description: LFO Frequency
+    - control: control_change
+      value: 7
+      description: VCF Frequency
+    - control: control_change
+      value: 8
+      description: VCF Resonance
+    - control: control_change
+      value: 9
+      description: HPF Cutoff
+    - control: control_change
+      value: 10
+      description: VCO1 FM LFO
+    - control: control_change
+      value: 11
+      description: VCO1 FM S&H
+    - control: control_change
+      value: 12
+      description: VCO1 Pulse Width
+    - control: control_change
+      value: 13
+      description: VCO1 Pulse Mod
+    - control: control_change
+      value: 14
+      description: VCO2 FM LFO
+    - control: control_change
+      value: 15
+      description: VCO2 FM S&H
+    - control: control_change
+      value: 16
+      description: VCO2 Pulse Width
+    - control: control_change
+      value: 17
+      description: VCO2 Pulse Mod
+    - control: control_change
+      value: 18
+      description: S&H Mix 1
+    - control: control_change
+      value: 19
+      description: S&H Mix 2
+    - control: control_change
+      value: 20
+      description: S&H Lag
+    - control: control_change
+      value: 21
+      description: Ring Noise Mix
+    - control: control_change
+      value: 22
+      description: VCO1 Mix
+    - control: control_change
+      value: 23
+      description: VCO2 Mix
+    - control: control_change
+      value: 24
+      description: VCF Control
+    - control: control_change
+      value: 25
+      description: VCF LFO
+    - control: control_change
+      value: 26
+      description: Env Level
+    - control: control_change
+      value: 27
+      description: AR Attack
+    - control: control_change
+      value: 28
+      description: AR Release
+    - control: control_change
+      value: 29
+      description: ADSR Attack
+    - control: control_change
+      value: 30
+      description: ADSR Decay
+    - control: control_change
+      value: 31
+      description: ADSR Sustain
+    - control: control_change
+      value: 32
+      description: ADSR Release
+    - control: control_change
+      value: 34
+      description: VCF Env Level
+    - control: control_change
+      value: 35
+      description: Portamento Length
+    - control: control_change
+      value: 36
+      description: Master Volume
